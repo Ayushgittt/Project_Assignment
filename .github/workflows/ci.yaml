@@ -71,7 +71,7 @@ jobs:
 
     - name: Update Image Tag in deployment.yaml
       run: |
-        sed -i "s|image: .*|image: ${{secrets.DOCKER_USERNAME}}/flask-app:${{github.run_id}}|" k8s/deployment.yaml
+        sed -i "s|image: .*|image: ${{secrets.DOCKER_USERNAME}}/project:${{github.run_id}}|" k8s/deployment.yaml
 
     - name: Commit & Push Updated Manifest
       run: |
