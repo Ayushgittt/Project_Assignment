@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: flask-container
-        image: 8192027760/project:14454454516
+        image: 8192027760/project:14454465757
         ports:
         - containerPort: 5000
